@@ -1,0 +1,14 @@
+<p>list works!</p>
+
+
+<input type="text" name="list" [(ngModel)]="items" />
+
+
+<button class="button" (click)="AddItems()">Add Items</button>
+
+
+<ul>
+    <li *ngFor="let items of carList">
+        {{items}}
+    </li>
+</ul>
